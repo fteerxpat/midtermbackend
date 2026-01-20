@@ -1,0 +1,25 @@
+# --- ตามโจทย์กำหนด ---
+# Backend Logs
+backend/logs/
+*.log
+npm-debug.log*
+
+# Secret Files (ไฟล์ลับ ห้ามเอาขึ้นเด็ดขาด)
+.env
+*/.env
+*.env
+
+# --- สิ่งที่ควรเพิ่มสำหรับโปรเจกต์ Node.js/Quasar ---
+# Dependencies (ไฟล์ไลบรารีขนาดใหญ่ ไม่ควรเอาขึ้น)
+node_modules/
+*/node_modules/
+
+# Build Output (ไฟล์ที่ได้จากการ compile)
+dist/
+*/dist/
+.quasar/
+*/.quasar/
+
+# System Files (ไฟล์ขยะของ OS)
+.DS_Store
+Thumbs.db
