@@ -1,15 +1,15 @@
 <template>
   <q-page padding>
-    <div class="text-h4 q-mb-md">
+    <div class="text-h4 q-mb-md text-center text-primary">
       Version Control + Docker Demo (Quasar)
     </div>
-    <q-card class="q-mb-md">
+    <q-card class="q-mb-md shadow-2">
       <q-card-section>
-        <div class="text-h6">Git Workflow (ตัวอย่างขันตอนทํางาน)</div>
+        <div class="text-h6 text-secondary">Git Workflow (ตัวอย่างขันตอนทํางาน)</div>
         <q-list bordered separator class="q-mt-sm">
           <q-item v-for="(step, index) in gitSteps" :key="index">
             <q-item-section avatar>
-              <q-badge>{{ index + 1 }}</q-badge>
+              <q-badge color="accent">{{ index + 1 }}</q-badge>
             </q-item-section>
             <q-item-section>
               <q-item-label>{{ step.title }}</q-item-label>
@@ -34,6 +34,7 @@
     </q-card>
   </q-page>
 </template>
+
 <script setup>
 const gitSteps = [
   {
